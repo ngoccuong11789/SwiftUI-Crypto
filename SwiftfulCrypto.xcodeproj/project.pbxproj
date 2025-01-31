@@ -35,7 +35,18 @@
 		B38D6F232D342A2700D54B6F /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D6F222D342A2700D54B6F /* MarketDataService.swift */; };
 		B38D6F252D34706100D54B6F /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D6F242D34706100D54B6F /* PortfolioView.swift */; };
 		B38D6F272D34733600D54B6F /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D6F262D34733600D54B6F /* XMarkButton.swift */; };
+		B3FD69762D4D8509006E43A0 /* SwiftfulCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD69752D4D8509006E43A0 /* SwiftfulCryptoTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3FD69772D4D8509006E43A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B38D6ED02D2C42B500D54B6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B38D6ED72D2C42B500D54B6F;
+			remoteInfo = SwiftfulCrypto;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B38D6ED82D2C42B500D54B6F /* SwiftfulCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,10 +78,19 @@
 		B38D6F222D342A2700D54B6F /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
 		B38D6F242D34706100D54B6F /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		B38D6F262D34733600D54B6F /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
+		B3FD69732D4D8508006E43A0 /* SwiftfulCryptoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftfulCryptoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3FD69752D4D8509006E43A0 /* SwiftfulCryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulCryptoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B38D6ED52D2C42B500D54B6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3FD69702D4D8508006E43A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -84,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				B38D6EDA2D2C42B500D54B6F /* SwiftfulCrypto */,
+				B3FD69742D4D8509006E43A0 /* SwiftfulCryptoTests */,
 				B38D6ED92D2C42B500D54B6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				B38D6ED82D2C42B500D54B6F /* SwiftfulCrypto.app */,
+				B3FD69732D4D8508006E43A0 /* SwiftfulCryptoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -227,6 +249,14 @@
 			path = CoinImage;
 			sourceTree = "<group>";
 		};
+		B3FD69742D4D8509006E43A0 /* SwiftfulCryptoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3FD69752D4D8509006E43A0 /* SwiftfulCryptoTests.swift */,
+			);
+			path = SwiftfulCryptoTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,6 +277,24 @@
 			productReference = B38D6ED82D2C42B500D54B6F /* SwiftfulCrypto.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B3FD69722D4D8508006E43A0 /* SwiftfulCryptoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3FD697B2D4D8509006E43A0 /* Build configuration list for PBXNativeTarget "SwiftfulCryptoTests" */;
+			buildPhases = (
+				B3FD696F2D4D8508006E43A0 /* Sources */,
+				B3FD69702D4D8508006E43A0 /* Frameworks */,
+				B3FD69712D4D8508006E43A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3FD69782D4D8509006E43A0 /* PBXTargetDependency */,
+			);
+			name = SwiftfulCryptoTests;
+			productName = SwiftfulCryptoTests;
+			productReference = B3FD69732D4D8508006E43A0 /* SwiftfulCryptoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -259,6 +307,10 @@
 				TargetAttributes = {
 					B38D6ED72D2C42B500D54B6F = {
 						CreatedOnToolsVersion = 15.3;
+					};
+					B3FD69722D4D8508006E43A0 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B38D6ED72D2C42B500D54B6F;
 					};
 				};
 			};
@@ -276,6 +328,7 @@
 			projectRoot = "";
 			targets = (
 				B38D6ED72D2C42B500D54B6F /* SwiftfulCrypto */,
+				B3FD69722D4D8508006E43A0 /* SwiftfulCryptoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,6 +340,13 @@
 			files = (
 				B38D6EE32D2C42B700D54B6F /* Preview Assets.xcassets in Resources */,
 				B38D6EE02D2C42B700D54B6F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3FD69712D4D8508006E43A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +386,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B3FD696F2D4D8508006E43A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3FD69762D4D8509006E43A0 /* SwiftfulCryptoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3FD69782D4D8509006E43A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B38D6ED72D2C42B500D54B6F /* SwiftfulCrypto */;
+			targetProxy = B3FD69772D4D8509006E43A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B38D6EE42D2C42B700D54B6F /* Debug */ = {
@@ -506,6 +582,40 @@
 			};
 			name = Release;
 		};
+		B3FD69792D4D8509006E43A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myorganization.SwiftfulCryptoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftfulCrypto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftfulCrypto";
+			};
+			name = Debug;
+		};
+		B3FD697A2D4D8509006E43A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myorganization.SwiftfulCryptoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftfulCrypto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftfulCrypto";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -523,6 +633,15 @@
 			buildConfigurations = (
 				B38D6EE72D2C42B700D54B6F /* Debug */,
 				B38D6EE82D2C42B700D54B6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3FD697B2D4D8509006E43A0 /* Build configuration list for PBXNativeTarget "SwiftfulCryptoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3FD69792D4D8509006E43A0 /* Debug */,
+				B3FD697A2D4D8509006E43A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
